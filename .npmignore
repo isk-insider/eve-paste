@@ -1,0 +1,5 @@
+src/
+test/
+data/
+node_modules/
+tsconfig.json
