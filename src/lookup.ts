@@ -12,11 +12,15 @@ export function lookup(typeName: string): LookupResult {
     );
 
     if (index === -1) {
-        return {};
+        return {
+            type_name: undefined,
+            type_id: undefined,
+            type_volume: undefined,
+        };
     }
 
     return {
-        type_name: typeName,
+        type_name: lookupTable.type_name[index],
         type_id: lookupTable.type_id[index],
         type_volume: lookupTable.type_volume[index],
     };
