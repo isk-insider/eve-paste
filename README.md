@@ -6,13 +6,11 @@ It was inspired by [evepraisal/evepaste](https://github.com/evepraisal/evepaste)
 
 ## Features
 
-### Features
-
 -   **Lightweight and Dependency-Free**  
     A minimal, efficient library with **zero dependencies**, ensuring fast performance and easy integration into any project.
 
--   **Comprehensive Parsing Capabilities**  
-    Handles multiple data types from EVE Online, including:
+-   **Multiple parses**  
+    Supports a variety of data types from EVE Online:
 
     -   Inventory
     -   Personal Assets
