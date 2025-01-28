@@ -20,7 +20,8 @@
     "license": "MIT",
     "author": "isk-insider",
     "publishConfig": {
-        "access": "public"
+        "access": "public",
+        "registry": "https://npm.pkg.github.com"
     },
     "type": "module",
     "main": "dist/index.js",
