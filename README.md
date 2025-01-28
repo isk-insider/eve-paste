@@ -9,7 +9,7 @@ It was inspired by [evepraisal/evepaste](https://github.com/evepraisal/evepaste)
 -   **Lightweight and Dependency-Free**  
     A minimal, efficient library with **zero dependencies**, ensuring fast performance and easy integration into any project.
 
--   **Multiple parses**  
+-   **Multiple Parsers**  
     Supports a variety of data types from EVE Online:
 
     -   Inventory
