@@ -19,8 +19,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-          registry-url: "https://npm.pkg.github.com"
-          scope: "@isk-insider"
       - run: npm ci
       - run: npm run build
       - run: npm test
