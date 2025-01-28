@@ -37,8 +37,8 @@
         "build": "tsc",
         "test": "ava"
     },
-    "dependencies": {},
     "devDependencies": {
+        "@ava/typescript": "^5.0.0",
         "ava": "^6.2.0",
         "semantic-release": "^24.2.1",
         "ts-node": "^10.9.2",
