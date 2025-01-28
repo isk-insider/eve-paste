@@ -231,6 +231,14 @@ const tokenizeTests = [
             ],
         },
     },
+    {
+        title: "empty",
+        input: "",
+        expected: {
+            tokenized_items: [],
+            failed_lines: [],
+        },
+    },
 ];
 
 const lookupTests = [

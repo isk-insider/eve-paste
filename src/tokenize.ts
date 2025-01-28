@@ -22,6 +22,10 @@ export function tokenize(rawText: string): TokenizationResult {
             const line_trimmed = line.trim();
             let tokenized = null;
 
+            if (line_trimmed === "") {
+                return acc_result;
+            }
+
             for (const parser of tokenizers) {
                 tokenized = parser(line_trimmed);
                 if (tokenized !== null) {
