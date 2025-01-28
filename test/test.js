@@ -306,6 +306,14 @@ const parserTests = [
             failed_lines: [],
         },
     },
+    {
+        title: "item-typo",
+        input: "Tritaniumm",
+        expected: {
+            items: [],
+            failed_lines: ["Tritaniumm"],
+        },
+    },
 ];
 
 const tokenizeMacro = test.macro({
