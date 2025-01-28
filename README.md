@@ -28,7 +28,7 @@ It was inspired by [evepraisal/evepaste](https://github.com/evepraisal/evepaste)
 ## Install
 
 ```sh
-npm install eve-paste
+npm i @isk-insider/eve-paste
 ```
 
 ## Usage
