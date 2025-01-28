@@ -1,17 +1,7 @@
 {
-    "name": "eve-paste",
-    "version": "1.0.0",
+    "name": "@isk-insider/eve-paste",
+    "version": "0.0.0-development",
     "description": "A node.js library for parsing copied and pasted data from EVE Online.",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "author": "isk-insider",
-    "license": "MIT",
-    "type": "module",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/isk-insider/eve-paste.git"
-    },
-    "homepage": "https://github.com/isk-insider/eve-paste",
     "keywords": [
         "eve online",
         "parser",
@@ -19,6 +9,25 @@
         "appraisal",
         "node.js"
     ],
+    "homepage": "https://github.com/isk-insider/eve-paste",
+    "bugs": {
+        "url": "https://github.com/isk-insider/eve-paste/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/isk-insider/eve-paste.git"
+    },
+    "license": "MIT",
+    "author": "isk-insider",
+    "publishConfig": {
+        "access": "public"
+    },
+    "type": "module",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "directories": {
+        "test": "test"
+    },
     "files": [
         "dist",
         "README.md"
@@ -28,8 +37,9 @@
         "test": "ava"
     },
     "devDependencies": {
-        "@ava/typescript": "^5.0.0",
         "ava": "^6.2.0",
+        "semantic-release": "^24.2.1",
+        "ts-node": "^10.9.2",
         "typescript": "^5.7.3"
     },
     "ava": {
