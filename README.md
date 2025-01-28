@@ -36,7 +36,7 @@ npm i @isk-insider/eve-paste
 ### Example
 
 ```ts
-import { parser } from "eve-paste";
+import { parser } from "@isk-insider/eve-paste";
 
 const result = parser("Tritanium\t1");
 console.log(result);
