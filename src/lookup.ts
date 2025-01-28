@@ -8,7 +8,7 @@ export interface LookupResult {
 
 export function lookup(typeName: string): LookupResult {
     const index = lookupTable.type_name.findIndex(
-        (type_name) => type_name === typeName
+        (type_name) => type_name.toLowerCase() === typeName.toLowerCase()
     );
 
     if (index === -1) {
