@@ -19,7 +19,11 @@ function parser(rawText: string) {
     const parsedItems: Item[] = tokenized_items
         .map((item) => {
             const { type_name, quantity, volume } = item;
-            const { type_id, type_volume } = lookup(type_name);
+            const {
+                type_id,
+                type_volume,
+                type_name: lookup_type_name,
+            } = lookup(type_name);
 
             if (!type_id) {
                 failed_lines.push(type_name);
@@ -28,7 +32,7 @@ function parser(rawText: string) {
 
             return {
                 type_id,
-                type_name,
+                type_name: lookup_type_name,
                 quantity:
                     Number(quantity ?? 0) +
                     Math.floor(Number(volume ?? 0) / Number(type_volume ?? 1)),
